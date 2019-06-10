@@ -1,0 +1,73 @@
+.main__first{
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../../src/img/bg-1.jpg") center no-repeat;
+  height: 650px;
+  margin-top: -20px;
+  z-index: 99;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  &--wrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    height: 95%;
+    align-items: center;
+  }
+  &--request{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    justify-content: space-between;
+    color: white;
+    & h2{
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    & span{
+      font-size: 1.4rem;
+    }
+    & form{
+      & input{
+        border-radius: 5px;
+        padding: 10px;
+        border: 0 none;
+        font-size: 1.1rem;
+      }
+      & button{
+        background: red;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 0 none;
+        font-size: 1.1rem;
+        margin-left: 25px;
+        cursor: pointer;
+        transition: .2s;
+        &:hover{
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+          transition: .2s;
+        }
+      }
+    }
+  }
+  &--action{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    justify-content: flex-start;
+    color: white;
+    & h2{
+      font-size: 3rem;
+      font-weight: 900;
+    }
+    & p{
+      font-size: 1.4rem;
+    }
+  }
+}

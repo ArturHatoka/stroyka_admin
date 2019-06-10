@@ -1,0 +1,220 @@
+@import "mixin";
+*, *:after, *:before{
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  z-index: 1;
+  scroll-behavior: smooth;
+  //background: rgba(255, 255, 255, 0);
+  background: url("../../src/img/bg_adv.gif");
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+body, header, main, footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section{
+  position: relative;
+  display: flex;
+  width: 100%;
+  //justify-content: center;
+  //align-items: center;
+}
+@import "header/header";
+@import "main/main";
+@import "footer/footer";
+
+.goods li a.good-b{width:95%;text-align:center;overflow:hidden;border: 1px solid #999;border-radius: 3px;box-shadow: 0 0 1px #999;margin: 1px auto 0;height: 65%;display: flex;align-items: center;}
+.goods li a.good-b img{border:0;max-width:100%; /* max-height: 100%; */display: flex;align-items: center;justify-content: center;width: 100%;}
+.pagetext li {
+  margin: 0 0 5px 0 !important;
+}
+.pagetext h2, .pagetext h3, .pagetext h4{
+   margin: 10px 0 10px 0 !important;
+}
+
+.testimonial{
+  position: relative;
+  display: flex;
+  &-inner{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+  }
+  &-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+  }
+  &-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+  &-name{
+    font-weight: 600;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  &-client{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    & p{
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 110;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+  width: 100%;
+}
+
+.modalDialog:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 65%;
+  position: relative;
+  margin: 20vw auto;
+  border-radius: 0.6vw;
+  background: white;
+  color: black;
+}
+
+.close {
+  background: white;
+  color: $main_color !important;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px 1px #000;
+  -webkit-box-shadow: 1px 1px 3px 1px #000;
+  box-shadow: 1px 1px 3px 1px #000;
+}
+
+.close:hover {
+  background: #00d9ff;
+}
+.callbody{
+  position: relative;
+}
+.backcall{
+  position: relative;
+}
+.call-modal-h2{
+  text-align: center;
+  padding-top: 20px;
+  background: white;
+  border-radius: 12px;
+}
+.inputs_block{
+  margin: 10px 0;
+}
+.inp-req input{
+  width: 30% !important;
+  margin-bottom: 25px !important;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid lightgrey;
+  font-size: 1.1rem;
+}
+.inp-req input.search-button{
+  padding: 10px 14px !important;
+  background: inherit;
+  border: 2px solid #be291d;
+  color: #be291d;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 0.9rem;
+  transition: .2s;
+}
+.inp-req{
+  margin: 2%;
+}
+.inp-req-marg{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#endthx{
+  display: none;
+}
+
+#endthx:target{
+  display: block;
+}
+
+#result{
+  padding-top: 0 !important;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#result p{
+  padding-top: 30px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+#result h2{
+  background: $main_color;
+  width: 25%;
+  margin-left: 50%;
+  border-radius: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  transform: translateX(-50%);
+}
+#result a{
+  color: white !important;
+
+}

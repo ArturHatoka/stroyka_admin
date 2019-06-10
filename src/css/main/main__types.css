@@ -1,0 +1,8 @@
+.main__types {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto; }

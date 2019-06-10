@@ -1,0 +1,99 @@
+&__articles{
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px auto;
+  &--wrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+  &--title{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    & h2{
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  &--box{
+    position: relative;
+    display: flex;
+    width: 25%;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    &__title{
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 5px 0;
+    }
+    &__img{
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      & img{
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &__txt{
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 5px 0;
+    }
+    &__link{
+      position: relative;
+      display: flex;
+      border: 2px solid $main_color;
+      margin: 5px 0;
+      background: inherit;
+      color: $main_color;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 0.9rem;
+      transition: .2s;
+      &:hover{
+        box-shadow: 0 0 5px 0 $main_color;
+        transition: .2s;
+      }
+    }
+    &__all{
+      margin: 20px auto 0;
+      background: #be291d;
+      border: 2px solid #be291d;
+      color: white;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 1rem;
+      transition: .2s;
+      :hover{
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+        transition: .2s;
+      }
+    }
+  }
+}

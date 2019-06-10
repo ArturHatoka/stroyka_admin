@@ -1,0 +1,16 @@
+
+@import "main__first";
+@import "main__types";
+@import "main__privilege";
+@import "main__project";
+.main{
+  @import "request";
+  @import "preview";
+  @import "slider";
+  @import "review";
+  @import "know";
+  @import "articles";
+  @import "sale";
+  @import "text";
+  @import "map";
+}

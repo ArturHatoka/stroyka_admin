@@ -1,0 +1,71 @@
+.header__info{
+  display: flex;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+  &__logo{
+    position: relative;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    & img{
+      position: relative;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 25%;
+  }
+  &__time{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    & span{
+      margin: 3px 0;
+    }
+  }
+  &__phone{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    & a{
+      cursor: pointer;
+      margin: 3px 0;
+    }
+  }
+  &__request{
+    position: relative;
+    display: flex;
+    & button{
+      background: inherit;
+      border: 2px solid $main_color;
+      color: $main_color;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 0.9rem;
+      transition: .2s;
+      &:hover{
+        box-shadow: 0 0 5px 0 $main_color;
+        transition: .2s;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.main__privilege {
+  width: 100%;
+  background: rgba(128, 128, 128, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .main__privilege--wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between; }
+  .main__privilege--item {
+    position: relative;
+    display: flex;
+    width: 14%; }

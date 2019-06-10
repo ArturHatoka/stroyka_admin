@@ -1,0 +1,46 @@
+.main__privilege{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--wrap{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &--item{
+    position: relative;
+    display: flex;
+    width: 13%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+    filter: brightness(0.8);
+    transition: 0.3s;
+    &:hover{
+      filter: brightness(1);
+      transition: 0.3s;
+    }
+    & img{
+      position: relative;
+      display: flex;
+      max-width: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    & span{
+      margin-top: 10px;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

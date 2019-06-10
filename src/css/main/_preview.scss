@@ -1,0 +1,44 @@
+&__preview{
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  &--video{
+    position: relative;
+    display: flex;
+    width: 45%;
+    height: max-content;
+    & iframe{
+      height: max-content;
+      width: 100%;
+      min-height: 325px;
+    }
+  }
+  &--txt{
+    position: relative;
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    &:before{
+      content: '\201c';
+      position: relative;
+      font-size: 2.5rem;
+      align-self: flex-start;
+      line-height: 1rem;
+      transform: translateY(-100%);
+    }
+    &:after{
+      content: '\201d';
+      position: relative;
+      font-size: 2.5rem;
+      align-self: flex-end;
+      line-height: 1rem;
+      transform: translateY(200%);
+    }
+  }
+}

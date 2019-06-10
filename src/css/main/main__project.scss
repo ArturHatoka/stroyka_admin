@@ -1,0 +1,130 @@
+.main__project{
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  flex-direction: column;
+  &--title{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    & h2{
+      font-size: 2rem;
+      margin: 25px auto;
+      text-align: center;
+    }
+  }
+  &--blocks{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &--item{
+    position: relative;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: .3s;
+    &:hover{
+      box-shadow: 0 0 10px 0 lightgrey;
+      transition: .3s;
+    }
+    &__link{
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      & img{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+    &__title{
+      display: flex;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 10px 0;
+      text-transform: uppercase;
+    }
+    &__price{
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $main_color;
+    }
+    &__wrap{
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 15px 0 0 0;
+    }
+    &__more{
+      font-weight: 500;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    &__about{
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: lightgray;
+      &--per{
+        font-weight: 500;
+        &:before{
+          content: url("../../src/img/perimeter.png");
+          padding-right: 2px;
+        }
+      }
+      &--plo{
+        font-weight: 500;
+      }
+    }
+  }
+  &--more{
+    position: relative;
+    display: flex;
+    width: max-content;
+    & a{
+      margin: 40px auto 0;
+      background: $main_color;
+      border: 2px solid $main_color;
+      color: white;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: inherit;
+      font-size: 1rem;
+      transition: .2s;
+      &:hover{
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+        transition: .2s;
+      }
+    }
+  }
+}

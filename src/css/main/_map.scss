@@ -1,0 +1,27 @@
+&__map{
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0;
+  &--title{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: linear-gradient(0deg, $main_color 45%, $main_op_color 100%) ;
+    border-radius: 5px;
+    color: white;
+    & h2{
+      font-size: 1.5rem;
+      padding: 15px 35px;
+    }
+  }
+  &--box{
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+}
